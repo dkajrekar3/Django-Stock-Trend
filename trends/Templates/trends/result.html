@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Trends</title>
+</head>
+<body>
+        <div class="container">
+                <h1>{{symbol}} Chart</h1>
+        </div>
+    {{occhart|safe}}
+
+    {{hlchart|safe}}
+
+    <div class="btn">
+        <a class="btn-primary" href="{% url 'home' %}" role="button">Back</a>
+    </div>
+
+</body>
+</html>
